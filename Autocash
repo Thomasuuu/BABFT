@@ -1,0 +1,145 @@
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/lime"))()
+
+local w = Library:Window("Main")
+
+w:Toggle("AutoFarmCash", function(v)
+    _G.AutoFarmCash = (v)
+    while _G.AutoFarmCash do
+    Farm()
+    end
+
+    _G.Pathway = (v)
+    while _G.Pathway do wait(0.1)
+    Platform()
+    end
+end)
+
+do
+    local Nm = game:GetService("Workspace"):FindFirstChild("Noclip")
+    if NM then
+        NM:Destroy()
+    end
+end
+    
+local Noclip = Instance.new("Part",Workspace)
+      Noclip.Name = "Noclip"    
+      Noclip.CanCollide = true
+      Noclip.Size = Vector3.new(30, 1, 30)
+      Noclip.CFrame = CFrame.new(-50.02587127685547, 77, 1334.9342041015625)
+      Noclip.Anchored = true
+
+ function Platform()
+    game:GetService("Workspace"):FindFirstChild("Noclip").CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0, -4, 0)
+ end
+ 
+function Farm()
+    
+    a = 2
+    b = 16
+
+    function stage1()
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50, 81, 1334)
+        local TweenService = game:GetService("TweenService")
+    local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(a, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+    {CFrame = CFrame.new(-50, 81, 1403)}):Play()
+    wait(a)
+    end
+
+    function stage2()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50, 81, 2090)
+        local TweenService = game:GetService("TweenService")
+    local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(a, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+    {CFrame = CFrame.new(-50, 81, 2177)}):Play()
+    wait(a)
+    end
+
+    function stage3()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50, 81, 2872)
+        local TweenService = game:GetService("TweenService")
+    local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(a, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+    {CFrame = CFrame.new(-50, 81, 2939)}):Play()
+    wait(a)
+    end
+
+    function stage4()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50, 81, 3623)
+        local TweenService = game:GetService("TweenService")
+    local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(a, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+    {CFrame = CFrame.new(-50, 81, 3729)}):Play()
+    wait(a)
+    end
+
+    function stage5()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50, 81, 4399)
+        local TweenService = game:GetService("TweenService")
+    local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(a, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+    {CFrame = CFrame.new(-50, 81, 4493)}):Play()
+    wait(a)
+    end
+
+    function stage6()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50, 81, 5170)
+        local TweenService = game:GetService("TweenService")
+    local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(a, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+    {CFrame = CFrame.new(-50, 81, 5253)}):Play()
+    wait(a)
+    end
+
+    function stage7()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50, 81, 5929)
+        local TweenService = game:GetService("TweenService")
+    local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(a, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+    {CFrame = CFrame.new(-50, 81, 6029)}):Play()
+    wait(a)
+
+    end
+
+    function stage8()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50, 81, 6704)
+        local TweenService = game:GetService("TweenService")
+    local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(a, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+    {CFrame = CFrame.new(-50, 81, 6791)}):Play()
+    wait(a)
+
+    end
+
+    function stage9()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50, 81, 7499)
+        local TweenService = game:GetService("TweenService")
+    local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(a, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+    {CFrame = CFrame.new(-50, 81, 7579)}):Play()
+    wait(a)
+
+    end
+
+    function stage10()
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50, 81, 8259)
+        local TweenService = game:GetService("TweenService")
+    local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(a, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+    {CFrame = CFrame.new(-50, 81, 8340)}):Play()
+    wait(a)
+
+    end
+
+    function gochest()
+        game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-50, -358, 9439)
+        local TweenService = game:GetService("TweenService")
+    local Tw = TweenService:Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(0.3, Enum.EasingStyle.Linear, Enum.EasingDirection.Out,0,false,0), 
+    {CFrame = CFrame.new(-50, -358, 9492, 0, 0, -1, 0, 1, 0, 1, 0, 0)}):Play()
+    wait(b)
+    end
+
+    stage1()
+    stage2()
+    stage3()
+    stage4()
+    stage5()
+    stage6()
+    stage7()
+    stage8()
+    stage9()
+    stage10()
+    gochest()
+
+end
